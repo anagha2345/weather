@@ -1,81 +1,111 @@
-.col-1{
-  background-color: rgba(113, 100, 91, 0.543);
-   height: 520px;
-   width: 350px;
-   padding: 30px;
+
+
+.col-1 {
+  background-color: rgba(112, 137, 146, 0.543);
+  width: 40%;
 }
-.col-2{
-  background-color: rgba(113, 100, 91, 0.543); 
-  height: 520px;
-  width: 350px;
-  margin-left: 30px;
+
+.input1 {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 40px;
+  display: flex;
+  
   
 }
-.col-2 h3{
+.input-group{
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 2px solid;
+
+}
+
+.input1 ::placeholder {
+  color: rgb(10, 5, 30);
+}
+
+.col-2 {
+  background-color: rgba(113, 100, 91, 0);
+}
+
+h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.col-2 h3 {
   font-family: 'Marck Script', cursive;
-  margin-top: 60px;
+
 }
-.btn{
-  margin-top: 9px;
-}
-#cname{
+
+#cname {
   margin-top: 10px;
 }
-.video{
+
+.video {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
 }
-@media (min-aspect-ratio:16/9){
- .video{
-  width: 100%;
-  height: auto;
- }
-}
-@media (max-aspect-ratio:16/9){
-  .video{
-   width: auto;
-   height: 100%;
-  }
-  
- }
- 
- .content{
-  display: flex;
 
- }
- .content h1{
+@media (min-aspect-ratio:16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio:16/9) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
+
+}
+
+
+.content h1 {
   font-family: 'Marck Script', cursive;
- 
- }
- @media(max-width:650px){
-  .content{
-    display: block;
-    margin-left: 10%;
+
+}
+
+@media(max-width:750px) {
+  .input1 {
+    margin-top: 2px;
   }
-  .col-1{
-    margin-top: 0px;
-    height: 100px;
-    width: 300px;
-   background-color:  rgba(113, 100, 91, 0.018);
-  }
-  .col-2{
-    margin-top: 100px;
-    margin-left: 0px;
-    height: 300px;
-    width: 300px;
-    background-color:  rgba(86, 86, 86, 0.356);
-  }
-  
-  #cname{
+  #cname {
     margin-top: 5px;
   }
-  .col-2 h3{
+  .col-1 {
+    width: 50%;
     
-    margin-top: 20px;
   }
-  .btn{
-    margin-top: 10px;
+  .col-2{
+    height: 480px;
   }
- }
+
+
+
+}
+
+.b1 {
+  background-color: rgba(110, 150, 186, 0.009);
+
+}
+
+.b1:hover {
+  transform: scale(1.5);
+
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+.btn :hover{
+  transform: scale(1.5);
+  transform: scale(1.1);
+}
