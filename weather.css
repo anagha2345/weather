@@ -78,6 +78,7 @@ h3 {
   .input1 {
     margin-top: 2px;
     width: 300px;
+    margin-left: -52px;
   }
   #cname {
     margin-top: 5px;
