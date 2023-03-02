@@ -19,11 +19,13 @@
   <script src="https://kit.fontawesome.com/26333faae7.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="content ">
-    <video autoplay loop muted plays-inline class="video">
+<body> 
+  
+  <video autoplay loop muted plays-inline class="video">
       <source src="./img/Time Lapse - 7001.mp4" type="video/mp4">
     </video>
+ 
+   
     <div class="container    mt-5  text-center col-1  rounded p-3 col-lg-6 col-md-6 col-sm-12">
 
       <h1 class="text-white">Today's Weather</h1>
@@ -37,7 +39,7 @@
 
 
     </div>
-  </div>
+  
 
 
 
@@ -64,27 +66,24 @@
 
     result.innerHTML = `<div class="fs-5">
  
-    <h4 class=" mt-5 fs-1 text-white"  style="font-size: large ; font-weight: bold;"><i class="fa-solid fa-cloud-sun"></i> ${place}<span> ${temp}°C  </span></h4>
-    <h4 class="text-white mt-4">${weather}</h4>
+    <h4 class="list-group-item mt-5 fs-1 text-white"  style="font-size: large ; font-weight: bold;"><i class="fa-solid fa-cloud-sun"></i> ${place}<span> ${temp}°C  </span></h4>
+    <h4 class="list-group-item text-white ">${weather}</h4>
     <div class="row mt-4">
-      <div class=" col-lg-3 col-md-3 col-sm-3 text-white b1 ">
-    <h3>feels like</h3>
-     <h5 class=" mt-3 text-white">${feels_l} °C</h5>
+      <div class=" col-lg-3 col-md-4 col-sm-3 text-white b1 ">
+    <h3 class="list-group-item text-white ">feels like</h3>
+     <h5 class="list-group-item mt-3 text-white">${feels_l} °C</h5>
     </div>
-    <div class=" col-lg-3 col-md-3 col-sm-3 text-white b1 ">
-    <h3>humidity</h3>
-
-    <h5 class=" text-white">${humidity}</h5>
+    <div class=" col-lg-3 col-md-4 col-sm-3 text-white b1 ">
+    <h3 class="list-group-item text-white ">humidity</h3>
+    <h5 class="list-group-item text-white">${humidity}</h5>
    </div> 
-   <div class=" col-lg-3 col-md-3 col-sm-3 text-white b1  ">
-    <h3>visibility</h3>
-
-    <h5 class=" text-white">${visibility}</h5>
+   <div class=" col-lg-3 col-md-4 col-sm-3 text-white b1  ">
+    <h3 class="list-group-item text-white ">visibility</h3>
+    <h5 class="list-group-item text-white">${visibility}</h5>
    </div>
-   <div class=" col-lg-3 col-md-3 col-sm-3 text-white b1">
-    <h3 class="">wind</h3>
-    
-   <h4 class="list-group-item mt-3 text-white"><i class="fa-solid fa-wind"></i> ${wind}Kmph</h4>
+   <div class=" col-lg-3 col-md-4 col-sm-3 text-white b1">
+    <h3 class="list-group-item text-white">wind</h3>
+   <h4 class="list-group-item  text-white">${wind}Kmph</h4>
    </div>
   </div>
    
